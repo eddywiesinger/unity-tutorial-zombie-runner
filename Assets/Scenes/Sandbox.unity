@@ -145,7 +145,7 @@ MonoBehaviour:
   range: 100
   damage: 30
   muzzleFlash: {fileID: 1081986993}
-  hitObject: {fileID: 4994126472895958515, guid: 1730e02ba2a166f4ab1f0fef30e2d28b,
+  hitObject: {fileID: 4395584539798529337, guid: 0e146ae10749bf943b207b90e6e26622,
     type: 3}
 --- !u!1 &495725854
 GameObject:
@@ -1194,6 +1194,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820848065539111942, guid: b4afbac13c78e6e4bb7fa64f5b145766,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820848065539111942, guid: b4afbac13c78e6e4bb7fa64f5b145766,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7820848065539111942, guid: b4afbac13c78e6e4bb7fa64f5b145766,
         type: 3}
