@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 5218866455612807510}
   - component: {fileID: 1739254841624883162}
   - component: {fileID: 2633845179990881194}
+  - component: {fileID: 3502582408518600798}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -319,6 +320,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &3502582408518600798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633845179990881190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b558842058eaf5f4bb0c975ec432dd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 100
 --- !u!1 &5774412981562801137
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +487,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 413081113316592741}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2726220963999733731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 413081113316592741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &321278285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2726220963999733731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e80aea6712f3a45805512ab30d0ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 3450085410961612432}
+  range: 100
+  damage: 30
+  muzzleFlash: {fileID: 5764202802926336316}
+  hitObject: {fileID: 4395584539798529337, guid: 0e146ae10749bf943b207b90e6e26622,
+    type: 3}
+--- !u!198 &5764202802926336316 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5351684822032233817, guid: ada2587319194f542957a8c2ae277cb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 413081113316592741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5988048199431364981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -552,6 +596,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+--- !u!20 &3450085410961612432 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74,
+    type: 3}
+  m_PrefabInstance: {fileID: 5988048199431364981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3450085410961612439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
