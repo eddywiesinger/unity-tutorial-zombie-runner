@@ -114,7 +114,6 @@ GameObject:
   - component: {fileID: 2633845179990881194}
   - component: {fileID: 3502582408518600798}
   - component: {fileID: 4886316829032050346}
-  - component: {fileID: 8997996947298202008}
   - component: {fileID: 8997996947298202009}
   m_Layer: 8
   m_Name: Player
@@ -349,23 +348,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &8997996947298202008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2633845179990881190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9d33710946fca041842c81ea5cce979, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 3062507851353652040}
-  zoomedOutFOV: 60
-  zoomedInFOV: 20
-  zoomedOutRotSpeed: 2.5
-  zoomedInRotSpeed: 0.8
 --- !u!114 &8997996947298202009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,7 +360,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2868237909f9c9749b655032675322c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 20
+  - ammoType: 2
+    ammoAmount: 8
 --- !u!1 &7672822087824624381
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,6 +411,26 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 8997996947298202009}
+    - target: {fileID: 1879322149649718833, guid: 2d3a85ecde41a8246a79669975912b74,
+        type: 3}
+      propertyPath: fpc
+      value: 
+      objectReference: {fileID: 2633845179990881185}
+    - target: {fileID: 1879322149649718833, guid: 2d3a85ecde41a8246a79669975912b74,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 3062507851353652040}
+    - target: {fileID: 2159146824111362312, guid: 2d3a85ecde41a8246a79669975912b74,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3756525146949276389, guid: 2d3a85ecde41a8246a79669975912b74,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4438332653299669955, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: ammoSlot
@@ -433,6 +441,11 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 8997996947298202009}
+    - target: {fileID: 8560403467584894614, guid: 2d3a85ecde41a8246a79669975912b74,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_RootOrder
@@ -487,6 +500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74,
+        type: 3}
+      propertyPath: field of view
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430823, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}

@@ -7,18 +7,13 @@ using StarterAssets;
 public class WeaponZoom : MonoBehaviour
 {
     [SerializeField] CinemachineVirtualCamera fpsCamera;
+    [SerializeField] FirstPersonController fpc;
     [SerializeField] float zoomedOutFOV = 40f;
     [SerializeField] float zoomedInFOV = 20f;
     [SerializeField] float zoomedOutRotSpeed = 2.5f;
     [SerializeField] float zoomedInRotSpeed = 0.8f;
 
-    FirstPersonController fpc;
     bool zoomedInToggle = false;
-
-    private void Start()
-    {
-        fpc = GetComponent<FirstPersonController>();
-    }
 
     void Update()
     {
@@ -26,16 +21,31 @@ public class WeaponZoom : MonoBehaviour
         {
             if (zoomedInToggle == false)
             {
-                zoomedInToggle = true;
-                fpsCamera.m_Lens.FieldOfView = zoomedInFOV;
-                fpc.RotationSpeed = zoomedInRotSpeed;
+                ZoomIn();
             }
             else
             {
-                zoomedInToggle = false;
-                fpsCamera.m_Lens.FieldOfView = zoomedOutFOV;
-                fpc.RotationSpeed = zoomedOutRotSpeed;
+                ZoomOut();
             }
         }
+    }
+
+    void ZoomOut()
+    {
+        zoomedInToggle = false;
+        fpsCamera.m_Lens.FieldOfView = zoomedOutFOV;
+        fpc.RotationSpeed = zoomedOutRotSpeed;
+    }
+
+    void ZoomIn()
+    {
+        zoomedInToggle = true;
+        fpsCamera.m_Lens.FieldOfView = zoomedInFOV;
+        fpc.RotationSpeed = zoomedInRotSpeed;
+    }
+
+    void OnDisable()
+    {
+        ZoomOut();
     }
 }

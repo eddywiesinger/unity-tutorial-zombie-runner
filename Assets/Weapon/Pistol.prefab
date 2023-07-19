@@ -435,12 +435,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 0}
-  range: 100
-  damage: 30
+  range: 25
+  damage: 15
   muzzleFlash: {fileID: 1138590236300982916}
   hitObject: {fileID: 4395584539798529337, guid: 0e146ae10749bf943b207b90e6e26622,
     type: 3}
   ammoSlot: {fileID: 0}
+  timeBetweenShots: 0.2
 --- !u!1 &7342804339525932125
 GameObject:
   m_ObjectHideFlags: 0
