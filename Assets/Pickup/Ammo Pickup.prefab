@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmount: 5
-  ammoType: 0
+  ammoType: 2
 --- !u!135 &496132449185032289
 SphereCollider:
   m_ObjectHideFlags: 0
